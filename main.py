@@ -16,8 +16,6 @@ def lines_printed_backwards(lines_list):
         line_number = lines_list.index(string) + 1 # assigned a varible the index of the string containing the line
         print(line_number, string)
 
-#print(lines_printed_backwards(get_file_lines('poem.txt')))
-
 #Create a function called lines_printed_random():
 def lines_printed_random(lines_list):
     list_num = range(len(lines_list))
@@ -26,14 +24,11 @@ def lines_printed_random(lines_list):
         rnum = random.randrange(26)
         print(lines_list[rnum])
 
-#print(lines_printed_random(get_file_lines('poem.txt')))
-
 #Create a function called lines_printed_custom()
 
 def lines_printed_custom(lines_list):
-    print(f'Your line of the day is: {random.choice(lines_list)}')
     ask = input(
-        'Do you want a new line? (Y/n) ')
+        'Do you want a random line? (Y/n) ')
     if ask == "Y":
         print(f'Your new line is: {random.choice(lines_list)}')
     else:
@@ -42,6 +37,6 @@ def lines_printed_custom(lines_list):
 #print(get_file_lines('poem.txt'))
 #lines_printed_backwards(get_file_lines('poem.txt'))
 #lines_printed_random(get_file_lines('poem.txt'))
-lines_printed_custom(get_file_lines('poem.txt'))
+#lines_printed_custom(get_file_lines('poem.txt'))
 
 
