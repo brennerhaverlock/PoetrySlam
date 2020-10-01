@@ -16,5 +16,16 @@ def lines_printed_backwards(lines_list):
         line_number = lines_list.index(string) + 1 # assigned a varible the index of the string containing the line
         print(line_number, string)
 
+#print(lines_printed_backwards(get_file_lines('poem.txt')))
+
+#Create a function called lines_printed_random():
+def lines_printed_random(lines_list):
+    list_num = range(len(lines_list))
+    list_num = list(list_num)
+    for i in list_num:
+        rnum = random.randrange(26)
+        print(lines_list[rnum])
+
+
 
 
