@@ -4,19 +4,17 @@ import os
 #Create a function called get_file_lines()
 
 def get_file_lines(filename):
-    return open(filename, 'r').read()#.strip().split('\n')
+    filename = open(filename, 'r')
+    return filename.readlines()
 
-#print(get_file_lines('poem.txt'))
+print(get_file_lines('poem.txt'))
+
 #Create a function called lines_printed_backwards()
+def lines_printed_backwards(lines_list):
+    lines_list_reverse = lines_list[::-1] # reverses the list of lines and assigned it to another varible
+    for string in lines_list_reverse:
+        line_number = lines_list.index(string) + 1 # assigned a varible the index of the string containing the line
+        print(line_number, string)
 
-def lines_printed_backwords(lines_list):
-    textfile = open("poem.txt")
-    lines = textfile.readlines()
-    for line in reversed(lines):
-        return line
 
-print(lines_printed_backwords(get_file_lines('poem.txt')))
 
-#Create a function called lines_printed_random():
-
-#Create a function called lines_printed_custom()
