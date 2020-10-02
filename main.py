@@ -37,6 +37,6 @@ def lines_printed_custom(lines_list):
 #print(get_file_lines('poem.txt'))
 #lines_printed_backwards(get_file_lines('poem.txt'))
 #lines_printed_random(get_file_lines('poem.txt'))
-#lines_printed_custom(get_file_lines('poem.txt'))
+lines_printed_custom(get_file_lines('poem.txt'))
 
 
